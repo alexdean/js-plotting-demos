@@ -1,0 +1,3 @@
+Bernard asked for a README.
+
+Take a look at flot.html and jqplot.html to see how these libraries draw some graphs.  Mainly I was wondering how quickly they can draw lots of fairly simple graphs.  Generate new random data using './generate_data.rb > js/data.js'.
