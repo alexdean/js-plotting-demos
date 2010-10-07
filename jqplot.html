@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>JQPlot Test</title>
+  <!--[if IE]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+  <script language="javascript" type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+  <script language="javascript" type="text/javascript" src="js/jquery.jqplot.min.js"></script>
+  <script language="javascript" type="text/javascript" src="js/data.js"></script>
+  <script>
+    $( function() {
+      for( x=0; x<data.length; x++ ) {
+        var id =  'graph-'+x;
+        var div = $( '<div></div>' ).attr( 'id', id ).addClass( 'graphs' );
+        $( 'body' ).append( div );
+        $.jqplot( id, [ data[ x ] ] );
+      }
+    });
+  </script>
+  
+  <style>
+    .graphs {
+      width: 600px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>
